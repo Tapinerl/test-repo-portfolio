@@ -1,0 +1,414 @@
+/* GLobal CSS*/
+
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: "Roboto", sans-serif;
+    -moz-osx-font-smoothing: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+:root {
+    --primary: #65BC96;
+    --heading-color: #282938;
+    --bg-shade: #f5fcff;
+    --github: #000000;
+    --darkblue: #1c1e53;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+.btn {
+    font-family: "Roboto";
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+.btn-outline-primary {
+    color: var(--black);
+    background-color: var(--primary);
+    border: 1px solid var(--black);
+}
+.btn-outline-primary:hover {
+    color: var(--primary);
+    background-color: var(--black);
+}
+.btn-primary {
+    color: var(--primary);
+    background-color: var(--black);
+    border: 1px solid var(--black);
+}
+.btn-primary:hover {
+    color: var(--black);
+    background-color: var(--white);
+}
+.btn-github {
+    color: var(--white);
+    background-color: var(--github);
+    border: var(--github);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.95);
+    gap: 16px;
+}
+.btn-github:hover {
+    color: var(--github);
+    background-color: var(--white);
+}
+/* End of Global CSS section */
+/*Main Headings*/
+
+/*heading 1 */
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67px;
+}
+/*heading 2 */
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+}
+/*heading 3 */
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+}
+/* Paragraphs text large medium small*/
+/* Body 1*/
+.text-lg {
+    color: var(--darkblue);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+}
+/* Body 2*/
+.text-md {
+    color: var(--darkblue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+/* Body 3*/
+.text-sm {
+    color: var(--black);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+/* Section Titles*/
+/* SSkills and about me*/
+.section-title {
+    color: var(--heading-color);
+    font-size: 21px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    display: flex;
+    align-items: flex-start;
+}
+/* Portfolio and Contact ME*/
+.sub--title {
+    color: var(--heading-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+/* Section Titles end*/
+
+/* NAvbar style start*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 85.333px;
+    background: var(--white);
+    box-shadow: 0px 1px 100px 0 rgb(128, 128, 128);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbar--items > ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 45px;
+    text-decoration: none;
+}
+.navbar--items > ul > a {
+    text-decoration: none;
+}
+/* navbar content*/
+.navbar--content {
+    color: var(--black);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+}
+.navbar--active-content {
+    color: var(--primary);
+}
+.navbar--name--logo {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    font-style: none;
+}
+/* navbar style end*/
+
+
+
+/* HEro sectyion style*/
+.hero--section {
+    /*display: grid;
+    grid-template-columns: repeat(2, 1fr);*/
+    padding: 133.333px 85.333px 133.333px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    background-color: var(--primary);
+}
+.hero--section--content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+.hero--section--content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21.333px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 10px;
+}
+.hero--section--content--box > button {
+    margin-top: 21.333px;
+}
+.hero--section--title {
+    color: var(--heading-color);
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 90px;
+    align-self: stretch;
+}
+.hero--section--title--color {
+    color: var(--heading-color);
+}
+.hero--section--description {
+    color: var(--heading-color);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+/*herosection style end*/
+
+/* skills section style*/
+.skills--section {
+    display: flex;
+    padding: 149.33px 85.33px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 106.667px;
+}
+.skills--section--heading {
+    color: var(--heading-color);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+}
+.skills--section--container {
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 42.6px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.skills--section--card {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+    border-radius: 10.6px;
+    background: var(--primary);
+    min-height: 250px;
+}
+.skills--section--card:hover {
+    border-bottom: 4px solid var(--black);
+}
+.skills--section--card:hover .skills--section--description {
+    color: var(--darkblue);
+}
+.skills--section--img {
+    display: flex;
+    padding: 13.3px;
+    justify-content: center;
+    align-items: center;
+    gap: 13.3px;
+    border-radius: 10.6px;
+    background: #f8f8f8;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+}
+.skills--section--card--content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+.skills--section--title {
+    color: var(--heading-color);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+}
+.skills--section--description {
+    color: var(--black);
+    font-size: 21.3px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+/*end of skills style*/
+
+/*About Me*/
+.about--section {
+    display: flex;
+    padding: 133.3px 85.3px;
+    align-items: center;
+    gap: 114.6px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.about--section--img > img {
+    width: 100%;
+    height: 100%;
+}
+.about--hero--section-description {
+    color: var(--black);
+    font-size: 21.3px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.about--hero--section-description2 {
+    color: var(--black);
+    font-size: 21.3px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+/* About Me stlye ends*/
+
+/*My portfolio style starts*/
+.portfolio--section {
+    display: flex;
+    padding: 112px 85px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+}
+.portfolio--container-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.portfolio--container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21.3px;
+}
+.portfolio--section--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42.6px;
+    width: 100%;
+}
+.portfolio--section--img {
+    border-radius: 8px;
+    width: 100%;
+}
+.portfolio--section--img > img {
+    width: 100%;
+}
+.portfolio--section--card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+    background: #ffffff;
+    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.portfolio--section--card--content {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+.portfolio--section--title {
+    color: var(--heading-color);
+}
+/*tää on tolle github linkille tos kortis*/
+.portfolio--link {
+    text-decoration: none;
+    display: flex;
+    gap: 16px;
+    border-bottom: 1.33px solid var(--primary);
+    padding-bottom: 10.6px;
+    font-weight: 600;
+}
+.portfolio--section--card:hover path {
+    stroke: #a1a1a1;
+}
